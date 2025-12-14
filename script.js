@@ -1,6 +1,10 @@
 function scrollToPosition(pixelPosition) {
+  // Adjust scroll position for mobile devices
+  const isMobile = window.innerWidth <= 768;
+  const adjustedPosition = isMobile ? pixelPosition * 0.3 : pixelPosition;
+  
   window.scrollTo({
-      top: pixelPosition,
+      top: adjustedPosition,
       behavior: 'smooth' // גלילה חלקה
   });
 }
@@ -90,4 +94,50 @@ var swiper = new Swiper(".product-row", {
       },
     },
   });
+
+// Mobile menu toggle
+document.addEventListener("DOMContentLoaded", function() {
+    const menuIcon = document.getElementById("menu-icon");
+    const navMenu = document.querySelector(".navmanue");
+    
+    if (menuIcon && navMenu) {
+        menuIcon.addEventListener("click", function() {
+            navMenu.classList.toggle("active");
+            // Toggle between menu and close icon
+            if (menuIcon.classList.contains("bx-menu")) {
+                menuIcon.classList.remove("bx-menu");
+                menuIcon.classList.add("bx-x");
+            } else {
+                menuIcon.classList.remove("bx-x");
+                menuIcon.classList.add("bx-menu");
+            }
+        });
+        
+        // Close menu when clicking on a link
+        const navLinks = navMenu.querySelectorAll("a");
+        navLinks.forEach(link => {
+            link.addEventListener("click", function() {
+                navMenu.classList.remove("active");
+                if (menuIcon.classList.contains("bx-x")) {
+                    menuIcon.classList.remove("bx-x");
+                    menuIcon.classList.add("bx-menu");
+                }
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener("click", function(event) {
+            const isClickInsideMenu = navMenu.contains(event.target);
+            const isClickOnIcon = menuIcon.contains(event.target);
+            
+            if (!isClickInsideMenu && !isClickOnIcon && navMenu.classList.contains("active")) {
+                navMenu.classList.remove("active");
+                if (menuIcon.classList.contains("bx-x")) {
+                    menuIcon.classList.remove("bx-x");
+                    menuIcon.classList.add("bx-menu");
+                }
+            }
+        });
+    }
+});
 

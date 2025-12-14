@@ -44,9 +44,9 @@
     <header>
         <a href="#" class="logo"><img src="./images/IconMixer.png" alt="icon mixer"></a>
         <ul class="navmanue">
-            <li><a href="#" onclick="scrollToPosition(120)">Home</a></li>
-            <li><a href="#" onclick="scrollToPosition(750)">Products</a></li>
-            <li><a href="#" onclick="scrollToPosition(1300)">Gallery</a></li>
+            <li><a href="#" onclick="scrollToPosition(120); return false;">Home</a></li>
+            <li><a href="#products" onclick="event.preventDefault(); document.getElementById('products').scrollIntoView({behavior: 'smooth', block: 'start'});">Products</a></li>
+            <li><a href="#gallery" onclick="event.preventDefault(); document.querySelector('.gallery').scrollIntoView({behavior: 'smooth', block: 'start'});">Gallery</a></li>
             <li><a href="#about-me" onclick="event.preventDefault(); document.getElementById('about-me').scrollIntoView({behavior: 'smooth', block: 'start'});">About</a></li>
         </ul>
 
@@ -181,7 +181,7 @@
 
 
 <!-- A changing gallery  start here-->
-<section class="gallery">
+<section class="gallery" id="gallery">
       <h1>A changing gallery</h1>
       <p>✨יופי שמתחיל בעין ונשאר בטעם</p>
 

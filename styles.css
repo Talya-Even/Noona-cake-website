@@ -228,12 +228,406 @@ button:hover {
     background: none;
 }
 
-@media (max-width:991px){
-    html{
+/* ==================== MOBILE RESPONSIVE STYLES ==================== */
+
+/* Mobile Menu Styles */
+@media (max-width: 991px) {
+    header {
+        padding: 15px 5%;
+        height: auto;
+        min-height: 80px;
+    }
+    
+    .navmanue {
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        width: 280px;
+        height: calc(100vh - 80px);
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        transition: right 0.3s ease;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 10000;
+    }
+    
+    .navmanue.active {
+        right: 0;
+    }
+    
+    .navmanue li {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .navmanue a {
+        display: block;
+        padding: 15px 30px;
+        width: 100%;
+    }
+    
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    
+    #menu-icon.bx-x {
+        font-size: 28px;
+    }
+}
+
+/* Tablet and Mobile - General adjustments */
+@media (max-width: 991px) {
+    html {
         font-size: 55%;
     }
-    .header{
-        padding: 1.3rem 3rem;
+}
+
+/* Mobile - Small screens */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    header {
+        padding: 10px 4%;
+        height: auto;
+        min-height: 70px;
+    }
+    
+    a.logo img {
+        max-width: 80px;
+    }
+    
+    .nav-icon {
+        gap: 10px;
+    }
+    
+    .nav-icon i {
+        margin-right: 10px;
+        font-size: 18px;
+    }
+    
+    .navmanue {
+        top: 70px;
+        width: 100%;
+        right: -100%;
+    }
+    
+    /* Hero section */
+    .maim-t {
+        height: 100vh;
+        min-height: 600px;
+        max-height: 100vh;
+        padding: 15% 5% 10%;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .maim-t::before {
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .main-text h3 {
+        font-size: 24px;
+    }
+    
+    .maim-t h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+    
+    .maim-t p {
+        font-size: 16px;
+    }
+    
+    .order-btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+    
+    .instagram-logo-main i {
+        font-size: 32px;
+    }
+    
+    .down-arrow {
+        top: 80%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    
+    /* Products section */
+    .product {
+        padding: 2rem 4%;
+    }
+    
+    .center-text {
+        margin-top: 30px;
+    }
+    
+    .center-text h1 {
+        font-size: 24px;
+    }
+    
+    .product .product-row .box {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        min-height: 300px;
+        margin: 0 auto 20px;
+    }
+    
+    .cookies-img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .product-row {
+        margin-top: 30px;
+    }
+    
+    .product .product-row .product-content h3 {
+        font-size: 20px;
+    }
+    
+    .product .product-row .product-content p {
+        font-size: 14px;
+    }
+    
+    /* Gallery section */
+    .gallery {
+        width: 95%;
+        padding-top: 30px;
+    }
+    
+    .gallery h1 {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+    
+    .gallery p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    
+    .row {
+        gap: 10px;
+    }
+    
+    .gallert-col {
+        flex: 0 0 calc(50% - 5px);
+        max-width: calc(50% - 5px);
+        height: 250px;
+        min-width: 150px;
+    }
+    
+    .gallert-col img {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .layer h3 {
+        font-size: 18px;
+    }
+    
+    /* Why choose us section */
+    .center-text1 {
+        padding-top: 60px;
+        margin-bottom: 40px;
+    }
+    
+    .center-text1 h1 {
+        font-size: 28px;
+    }
+    
+    .img-container {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        gap: 30px;
+    }
+    
+    .STRAWBERY-img {
+        width: 150px;
+        margin: 0;
+        order: 2;
+    }
+    
+    .left-icons,
+    .right-icons {
+        position: static;
+        left: auto;
+        right: auto;
+        margin: 0;
+        gap: 20px;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .left-icons {
+        order: 1;
+    }
+    
+    .right-icons {
+        order: 3;
+    }
+    
+    .icon-text-pair {
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .icon-text-pair i {
+        font-size: 20px;
+        margin: 0 10px;
+    }
+    
+    .icon-text-pair p {
+        font-size: 14px;
+        margin: 0;
+    }
+    
+    /* About me section */
+    .about-me {
+        width: 95%;
+        margin: 60px auto;
+        padding: 100px 20px 40px;
+        text-align: center;
+    }
+    
+    .about-me img {
+        width: 180px;
+        height: 180px;
+        float: none;
+        margin: -60px auto 20px;
+        display: block;
+    }
+    
+    .about-me h1 {
+        position: static;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .about-me p {
+        font-size: 16px;
+        margin: 15px 0;
+        text-align: center;
+    }
+    
+    .hero-btn {
+        font-size: 18px;
+        padding: 10px 20px;
+        margin: 20px auto 0;
+        display: block;
+        width: fit-content;
+    }
+    
+    /* Facebook banner */
+    .facebook-banner {
+        width: 95%;
+        margin: 60px auto;
+        padding: 20px 15px;
+    }
+    
+    .banner-content h1 {
+        font-size: 22px;
+    }
+    
+    .banner-text {
+        font-size: 14px;
+    }
+    
+    .banner-link a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 30px 20px;
+    }
+    
+    .footer p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    
+    .icons .fa {
+        font-size: 24px;
+    }
+    
+    /* Scroll to top button */
+    #scrollToTopBtn {
+        width: 45px;
+        height: 45px;
+        bottom: 15px;
+        left: 15px;
+    }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+    .maim-t h1 {
+        font-size: 26px;
+    }
+    
+    .main-text h3 {
+        font-size: 20px;
+    }
+    
+    .gallery h1 {
+        font-size: 24px;
+    }
+    
+    .center-text1 h1 {
+        font-size: 24px;
+    }
+    
+    .about-me h1 {
+        font-size: 30px;
+    }
+    
+    .gallert-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .product .product-row .box {
+        max-width: 100%;
+    }
+    
+    .banner-content h1 {
+        font-size: 20px;
+    }
+    
+    .banner-text {
+        font-size: 13px;
+    }
+}
+
+/* Touch device improvements */
+@media (hover: none) and (pointer: coarse) {
+    .navmanue a,
+    .order-btn,
+    .hero-btn,
+    .banner-link a {
+        min-height: 44px; /* Minimum touch target size */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-icon i,
+    #menu-icon {
+        min-width: 44px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
