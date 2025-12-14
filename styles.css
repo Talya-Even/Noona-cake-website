@@ -467,12 +467,13 @@ button:hover {
     }
     
     .gallery h1 {
-        font-size: 18px;
+        font-size: 16px;
         margin-top: 20px;
-        line-height: 1.2;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        line-height: 1.3;
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+        word-wrap: break-word;
     }
     
     .gallery p {
@@ -481,7 +482,7 @@ button:hover {
     }
     
     .gallery .row {
-        gap: 6px !important;
+        gap: 0 !important;
         padding: 0 !important;
         margin: 0 !important;
         display: flex !important;
@@ -490,12 +491,21 @@ button:hover {
     }
     
     .gallery .gallert-col {
-        flex: 0 0 calc(50% - 3px) !important;
-        max-width: calc(50% - 3px) !important;
-        width: calc(50% - 3px) !important;
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+        width: 50% !important;
         height: 150px !important;
         min-width: 0 !important;
         box-sizing: border-box !important;
+        margin: 0 !important;
+    }
+    
+    .gallery .gallert-col:nth-child(odd) {
+        padding-right: 2px;
+    }
+    
+    .gallery .gallert-col:nth-child(even) {
+        padding-left: 2px;
     }
     
     .gallery .gallert-col img {
@@ -526,85 +536,87 @@ button:hover {
     .img-container {
         position: relative;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
         margin: 0 auto 60px;
-        padding: 0 5%;
-        min-height: 300px;
+        padding: 0 3%;
+        min-height: auto;
         max-width: 100%;
         box-sizing: border-box;
-        overflow: hidden;
     }
     
     .STRAWBERY-img {
-        width: 90px;
+        width: 100px;
         height: auto;
         z-index: 1;
-        margin: 0 auto;
+        margin: 20px auto;
         position: relative;
+        order: 2;
     }
     
     .left-icons {
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
+        position: static;
         display: flex;
         flex-direction: column;
-        gap: 50px;
-        width: 45%;
-        max-width: 45%;
-        padding-right: 5px;
+        gap: 15px;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
         box-sizing: border-box;
+        order: 1;
+        margin-bottom: 15px;
     }
     
     .right-icons {
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
+        position: static;
         display: flex;
         flex-direction: column;
-        gap: 50px;
-        width: 45%;
-        max-width: 45%;
-        padding-left: 5px;
+        gap: 15px;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
         box-sizing: border-box;
+        order: 3;
+        margin-top: 15px;
     }
     
     .icon-text-pair {
         display: flex;
         align-items: center;
+        justify-content: center;
         margin-bottom: 0;
+        width: 100%;
     }
     
     .icon-text-pair.short {
-        align-self: flex-end;
+        align-self: center;
     }
     
     .icon-text-pair i {
-        font-size: 16px;
-        margin: 0 5px;
+        font-size: 18px;
+        margin: 0 10px;
         flex-shrink: 0;
     }
     
     .icon-text-pair p {
-        font-size: 11px;
+        font-size: 13px;
         margin: 0;
-        line-height: 1.3;
+        line-height: 1.4;
         font-family: "Fredoka", sans-serif;
-        max-width: 100%;
+        max-width: 80%;
         word-wrap: break-word;
         overflow-wrap: break-word;
+        text-align: center;
     }
     
     .left-icons .icon-text-pair {
-        flex-direction: row-reverse;
+        flex-direction: row;
     }
     
     .left-icons .icon-text-pair p {
-        text-align: left;
+        text-align: center;
     }
     
     .right-icons .icon-text-pair {
@@ -612,14 +624,14 @@ button:hover {
     }
     
     .right-icons .icon-text-pair p {
-        text-align: right;
+        text-align: center;
     }
     
     /* About me section */
     .about-me {
         width: 100%;
         margin: 60px 0;
-        padding: 100px 3% 50px;
+        padding: 60px 3% 50px;
         text-align: center;
         box-sizing: border-box;
         display: flex;
@@ -632,43 +644,43 @@ button:hover {
         order: 1;
         position: static;
         font-size: 32px;
-        margin: 0 0 40px 0;
+        margin: 0 0 30px 0;
         width: 100%;
         text-align: center;
         transform: none;
         z-index: 3;
     }
     
-    .about-me img {
-        order: 2;
-        width: 180px;
-        height: 180px;
-        float: none;
-        margin: 0 auto 30px;
-        display: block;
-        position: static;
-        z-index: 2;
-    }
-    
     .about-me p {
-        order: 3;
+        order: 2;
         font-size: 16px;
         margin: 0 0 25px 0;
-        text-align: right;
-        padding: 0 5%;
+        text-align: center;
+        padding: 0 3%;
         position: static;
         z-index: 1;
         direction: rtl;
     }
     
     .hero-btn {
-        order: 4;
+        order: 3;
         font-size: 18px;
         padding: 10px 20px;
-        margin: 0 auto;
+        margin: 0 auto 30px;
         display: block;
         width: fit-content;
         text-align: center;
+    }
+    
+    .about-me img {
+        order: 4;
+        width: 180px;
+        height: 180px;
+        float: none;
+        margin: 0 auto;
+        display: block;
+        position: static;
+        z-index: 2;
     }
     
     /* Facebook banner */
@@ -740,26 +752,57 @@ button:hover {
     }
     
     .gallery h1 {
-        font-size: 24px;
+        font-size: 14px;
+    }
+    
+    .gallery .row {
+        gap: 0 !important;
+    }
+    
+    .gallery .gallert-col {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+        width: 50% !important;
+        height: 140px !important;
+    }
+    
+    .gallery .gallert-col:nth-child(odd) {
+        padding-right: 2px;
+    }
+    
+    .gallery .gallert-col:nth-child(even) {
+        padding-left: 2px;
+    }
+    
+    .gallery .gallert-col img {
+        height: 140px !important;
     }
     
     .center-text1 h1 {
         font-size: 24px;
     }
     
+    .STRAWBERY-img {
+        width: 90px;
+    }
+    
+    .icon-text-pair p {
+        font-size: 12px;
+    }
+    
     .about-me {
-        padding: 90px 2% 40px;
+        padding: 50px 2% 40px;
     }
     
     .about-me h1 {
         font-size: 28px;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
     
     .about-me img {
         width: 150px;
         height: 150px;
-        margin: 0 auto 25px;
+        margin: 0 auto;
     }
     
     .about-me p {
@@ -769,7 +812,7 @@ button:hover {
     }
     
     .hero-btn {
-        margin: 0 auto;
+        margin: 0 auto 25px;
         display: block;
     }
     
