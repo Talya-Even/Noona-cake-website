@@ -333,6 +333,14 @@ button:hover {
         background-position: center;
     }
     
+    .main-text {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
     .main-text h3 {
         font-size: 24px;
     }
@@ -352,9 +360,11 @@ button:hover {
     }
     
     .instagram-logo-main {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+        display: block !important;
+        width: fit-content;
     }
     
     .instagram-logo-main i {
@@ -372,6 +382,8 @@ button:hover {
         padding: 2rem 3% 3rem;
         width: 100%;
         margin: 0;
+        background-color: rgba(204, 194, 200, 0.23);
+        border-radius: 1rem;
     }
     
     .center-text {
@@ -384,6 +396,14 @@ button:hover {
     
     .product .product-row {
         padding-bottom: 2rem;
+    }
+    
+    .product .swiper {
+        padding-bottom: 2rem;
+    }
+    
+    .product .swiper-pagination {
+        bottom: 0 !important;
     }
     
     .product .product-row .box {
