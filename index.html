@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noona Cake 🍰</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Suez+One&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'> <!--gluten free-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'> <!--delivery-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'> <!--birthday-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'> <!--Kasher-->
+
+    <script src="https://kit.fontawesome.com/6e47798f3f.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <p id="message"></p>
+
+    <header>
+        <a href="#" class="logo"><img src="./images/IconMixer.png" alt="icon mixer"></a>
+        <ul class="navmanue">
+            <li><a href="#" onclick="scrollToPosition(120)">Home</a></li>
+            <li><a href="#" onclick="scrollToPosition(750)">Products</a></li>
+            <li><a href="#" onclick="scrollToPosition(1300)">Gallery</a></li>
+            <li><a href="#about-me" onclick="event.preventDefault(); document.getElementById('about-me').scrollIntoView({behavior: 'smooth', block: 'start'});">About</a></li>
+        </ul>
+
+        <div class="nav-icon">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="#"><i class='bx bx-user'></i></a>
+            <button id="whatsappButton"  aria-label="וואטסאפ"><i class='bx bxl-whatsapp'></i></button>
+
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+
+
+<!--the opening start here -->
+    <section class="maim-t">
+        <div class="main-text">
+            <h3>Noona Cake</h3>
+            <h1>Welcome to<br> my sweet kindom</h1>
+            <p>Made with love by Orel Israel</p>
+            <a href="#" id="orderButton" class="order-btn">Order Now</a>
+            <a href="https://www.instagram.com/noona.cake.store?igsh=MWE1aDhjbzd6bGhqYg==" target="_blank" class="instagram-logo-main" aria-label="אינסטגרם">
+                <i class="fa fa-instagram"></i>
+            </a>
+        </div>
+
+        <div class="down-arrow">
+            <button id="myButton"><a href="#tredding" class="down"><i class='bx bx-down-arrow-alt'></i></a></button>
+        </div>
+
+        <button id="scrollToTopBtn"><i class='bx bx-up-arrow-alt'></i></button>
+    </section>
+<!--the opening end here -->
+
+
+    <!--section exclusive products here -->
+    <section class="product" id="products">
+        <div class="center-text">
+            <h1>Our Exclusive <span>Products</span></h1>
+        </div>
+
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="./images/cookies.jpg" class="cookies-img" alt="cookies">
+                    </div>
+
+                    <div class="product-content">
+                        <h3 id="head1"> מְגֻלְגָּלוֹת</h3>
+                        <p>עוגיות בצק פריך במגוון מילויים</p>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="./images/kinder.jpg" class=cookies-img alt="gradenCake">
+                    </div>
+
+                    <div class="product-content">
+                        <h3 id="head1"> עוּגִיּוֹת אַמְסְטֶרְדָּם </h3>
+                        <p>עוגיות אמסטרדם בטופינגים שונים</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="./images/מארז1.jpg" class=cookies-img alt="gradenCake">
+                    </div>
+
+                    <div class="product-content">
+                        <h3 id="head1"> מארזים </h3>
+                        <p>מארזים לכל אירוע בגדלים שונים </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="./images/מגשתאריכים.jpg" class=cookies-img alt="gradenCake">
+                    </div>
+
+                    <div class="product-content">
+                        <h3 id="head1"> מגשים מעוצבים </h3>
+                        <p>הטרדנים הכי שווים אצלי</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="./images/gardenCakes.jpg" class=cookies-img alt="cookies">
+                    </div>
+
+                    <div class="product-content">
+                        <h3 id="head1"> עוּגַת גַּן </h3>
+                        <p>עוגות גן בעיצובים מיוחדים </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="./images/personalDessert.jpg" class=cookies-img alt="Personaldessert">
+                    </div>
+
+                    <div class="product-content">
+                        <h3 id="head1"> קִנּוּחִים אִישִׁיִּים </h3>
+                        <p>חלבי \ פרווה לבחירה</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="./images/Dcakes.jpg" class=cookies-img alt="Personaldessert">
+                    </div>
+
+                    <div class="product-content">
+                        <h3 id="head1"> עוּגוֹת מְעֻצָּבוֹת </h3>
+                        <p>עוגות בעיצוב אישי</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!--prducts section end here -->
+
+
+
+
+
+
+<!-- A changing gallery  start here-->
+<section class="gallery">
+      <h1>A changing gallery</h1>
+      <p>✨יופי שמתחיל בעין ונשאר בטעם</p>
+
+
+    <div class="row">
+        <div class="gallert-col">
+            <img src="images/עוגת מספרים 40.jpg" alt="number-cake">
+            <div class="layer">
+                <h3>עוגת מספרים</h3>
+            </div>
+        </div>
+        <div class="gallert-col">
+            <img src="images/תמונה של WhatsApp‏ 2024-05-22 בשעה 19.01.08_33921ee3.jpg" alt="number-cake">
+            <div class="layer">
+                <h3>עוגת בנטו</h3>
+            </div>
+        </div>
+        <div class="gallert-col">
+            <img src="images/תמונה של WhatsApp‏ 2024-10-22 בשעה 17.48.46_cfba3c54.jpg" alt="number-cake">
+            <div class="layer">
+                <h3>עוגת גן מעוצבת</h3>
+            </div>
+        </div>
+        <div class="gallert-col">
+            <img src="images/תמונה של WhatsApp‏ 2024-10-22 בשעה 17.48.43_bdbf6c71.jpg" alt="number-cake">
+            <div class="layer">
+                <h3>מארז עוגיות<br>מפנק</h3>
+            </div>
+        </div>
+        <div class="gallert-col">
+            <img src="images/תמונה של WhatsApp‏ 2024-10-22 בשעה 17.48.44_e1db8cf8.jpg" alt="number-cake">
+            <div class="layer">
+                <h3>עיצוב אישי</h3>
+            </div>
+        </div>
+        <div class="gallert-col">
+            <img src="images/תמונה של WhatsApp‏ 2024-10-22 בשעה 17.48.44_ac2dc6c8.jpg" alt="number-cake">
+            <div class="layer">
+                <h3>עיצוב אישי</h3>
+            </div>
+        </div>
+        <div class="gallert-col">
+            <img src="images/עוגת תותים.jpg" alt="number-cake">
+            <div class="layer">
+                <h3>עוגת תותים וקצפת</h3>
+            </div>
+        </div>
+        <div class="gallert-col">
+            <img src="images/מארזלחגים.jpg" alt="number-cake">
+            <div class="layer">
+                <h3>מארזים לחגים</h3>
+            </div>
+        </div>
+    </div>
+
+    </section>
+<!-- A changing gallery  end here-->
+
+
+
+
+
+
+    <!--why choose us section start-->
+    <section class="reasons">
+
+        <div class="center-text1">
+            <h1>Why choose me?</h1>
+        </div>
+
+        <div class="img-container">
+
+            <div class="icon-container left-icons">
+
+                <div class="icon-text-pair short">
+                    <p id="delivery" > משלוחים לכל הארץ 
+                    </p>
+                    <i class="fi fi-tr-location-alt"></i> <!-- אייקון 1 --><!--free delivery-->
+                </div>
+
+                <div class="icon-text-pair">
+                    <p id="party">מעבירה סדנאות מתוקות למגוון אירועים 
+                        <br>מיוחדים (ערבי צוות, ימי הולדת, ועוד) 
+                    </p>
+                    <i class="fi fi-tr-party-horn"></i>    <!-- אייקון 2 --><!--birthday party-->
+                </div>
+
+            </div>
+        
+            <img src="./images/strow.jpg" class="STRAWBERY-img" alt="strawberry">
+        
+            <div class="icon-container right-icons">
+
+                <div class="icon-text-pair">
+                <i class="fi fi-tr-memo-circle-check"></i>  <!-- אייקון 3 --><!--Kasher-->
+                <p id="kasher">מטבח כשר בו כל המוצרים
+                    <br> מהדרין בית יוסף 
+                    </p>
+                </div>
+
+                <div class="icon-text-pair">
+                <i class="fi fi-ts-daisy-alt"></i>          <!-- אייקון 4 --><!--gluten free-->
+                <p id="gluten">אופציה למגוון רחב של קינוחים
+                    <br> ללא גלוטן 
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+           
+
+        
+    </section>
+    <!--why  choose us section end -->
+
+
+   
+<!--about me section start-------------->
+<section class="about-me" id="about-me">
+    <img src="./images/orel.jpg" class="Orel-img" alt="the-cheff">
+
+    <h1> about me</h1>
+    <p> !איזה כיף שהגעתם עד לכאן<br> .אז נעים להכיר אני אוראל ישראל, ותמיד הייתה לי אהבה מיוחדת לאפיית עוגות <br>
+        במשך שנים, אפיתי להנאתי עבור המשפחה והחברים, ופשוט התאהבתי בתהליך <br> .עם הזמן, הבנתי שהאפייה היא לא רק תחביב, אלא התשוקה האמיתית שלי <br>
+        לכן, החלטתי ללמוד ולהתמקצע בתחום, והיום אני גאה לפתוח את העסק שלי למכירת עוגות <br>  אני מקפידה על שימוש בחומרי גלם טריים ואיכותיים, ומתחייבת לשירות אישי ומדהים, וכל זה במחירים שמתאימים לכל כיס   
+        <br> ההתמחות שלי היא יצירת עוגות בהתאמה אישית לכל אירוע – מימי הולדת ומסיבות חתונה, דרך בריתות ועד אירועים עסקיים <br> 
+        
+         
+        <br> ?אתם עוד פה </p>
+
+    <a href="javascript:void(0)" id="heroButton" class="hero-btn">בואו נכיר</a>
+
+
+</section>
+<!--about me section end-------------->
+
+<!--facebook banner section start-------------->
+<section class="facebook-banner">
+    <div class="banner-content">
+        <h1>🍰🍰 עוגות מהיום להיום</h1>
+        <div class="banner-text">
+            <p>? קונדיטור/ית שפנוי/ה לקבל הזמנה בהתראה קצרה</p>
+            <p>? מחפש/ת עוגה כאן ועכשיו</p>
+            <br>
+            <p>"בקבוצה <strong>"עוגות מהיום להיום</strong></p>
+            <p>💕 אופות ולקוחות נפגשות במקום אחד </p>
+            <br>
+            <p>– הצטרפי לקבוצת הפייסבוק שלנו</p>
+            <p>👩‍🍳🎂 קהילה של אופות ולקוחות להזמנות מהיום להיום </p>
+        </div>
+        <div class="banner-link">
+            <a href="https://www.facebook.com/share/g/16mxvKkeeK/?mibextid=wwXIfr" target="_blank" aria-label="פייסבוק">
+                <i class="fa fa-facebook"></i>
+                <span>👈 להצטרפות לקבוצת הפייסבוק</span>
+            </a>
+        </div>
+    </div>
+</section>
+<!--facebook banner section end-------------->
+    
+
+<!--footer section start-------------->
+<section class="footer">
+    <p>"כשהחיים נותנים לך קמח, חמאה וסוכר – תהפוך אותם ליצירת אמנות מתוקה שמספרת סיפור בכל ביס"
+    <br>!בואו לאנסטגרם שם כיף יותר</p>
+
+    <div class="icons">
+        <a href="https://www.facebook.com/share/1cKkZrPned/?mibextid=wwXIfr" target="_blank" aria-label="פייסבוק"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/noona.cake.store?igsh=MWE1aDhjbzd6bGhqYg==" target="_blank" aria-label="אינסטגרם"><i class="fa fa-instagram"></i></a>
+        <a href="#" id="footerWhatsappButton" aria-label="וואטסאפ"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+    </div>
+    <p> Made with <i class="fa fa-heart-o"></i> by Talya Even </p>
+
+</section>
+<!--footer section end-------------->
+
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
