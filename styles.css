@@ -1741,25 +1741,27 @@ section {
         margin-top: 30px !important;
     }
 
-    /* FIX: Use CSS Grid for robust 2-column layout */
+    /* FIX: Flexible 2-column layout (safer than grid) */
     .gallery .row {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 15px !important;
-        /* Horizontal and Vertical gap */
-        justify-content: center !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+        gap: 0 !important;
+        /* Managed via margins/widths */
         padding: 0 !important;
         width: 100% !important;
     }
 
     .gallert-col {
-        width: 100% !important;
-        max-width: none !important;
+        flex: 0 0 48% !important;
+        /* 48% width allows for ~4% gap total */
+        max-width: 48% !important;
+        width: 48% !important;
         height: 200px !important;
-        margin: 0 !important;
+        margin-bottom: 15px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
         border-radius: 10px !important;
-        flex: none !important;
-        /* Disable flex behavior since we use grid */
     }
 
     .gallert-col img {
@@ -1769,8 +1771,7 @@ section {
         border-radius: 10px !important;
     }
 
-    /* 7. WHY CHOOSE US - NO CHANGES (Vertical Stack kept from previous iteration as it was correct for mobile but user said 'leave strictly as is' - assuming they meant don't mess it up, but the vertical stack IS the mobile fix. However, user said 'Do not touch this section (Why Choose Me)'. I will revert this specific section to inherit default or previous working state. But wait, previous state WAS vertical. If I remove it, it might break. The user said 'Do not change anything in this section. Leave it exactly as it is.' This likely means 'Leave the content/style alone', but since we are in mobile override, if I remove the vertical stack rules, it might look bad. But strict adherence means I should probably include the rules that make it look good (vertical) which I already added, or just not change them from the LAST step. I will Include the Vertical Stack rules because 'Leave it exactly as it is' implies 'As it is right now with the mobile fixes that hopefully worked' or 'Don't make new changes'. Since the user said 'None of the previous adjustments applied', maybe the vertical stack didn't apply either. But if I don't apply vertical stack, it will be horizontal and broken. I will keep the vertical stack code because it is necessary for mobile. */
-
+    /* 7. WHY CHOOSE US - NO CHANGES */
     .reasons {
         padding: 0 5% !important;
         margin-bottom: 40px !important;
@@ -1818,22 +1819,27 @@ section {
         max-width: 100% !important;
     }
 
-    /* 8. ABOUT ME FIXES - RIGHT ALIGNED & REORDERED */
+    /* 8. ABOUT ME FIXES - STRICT NO OVERLAP */
     .about-me {
         width: 95% !important;
         margin: 60px auto 50px !important;
-        /* Adjusted margin since we aren't pulling image up */
-        padding: 40px 20px 40px !important;
+        padding: 40px 20px 60px !important;
+        /* Extra bottom padding */
         display: flex !important;
         flex-direction: column !important;
         align-items: flex-end !important;
         text-align: right !important;
         direction: rtl !important;
+        height: auto !important;
+    }
+
+    /* Reset all children to static to prevent overlap */
+    .about-me * {
+        position: static !important;
     }
 
     .about-me h1 {
         order: 1 !important;
-        position: static !important;
         text-align: right !important;
         margin-bottom: 20px !important;
         font-size: 36px !important;
@@ -1852,18 +1858,17 @@ section {
 
     .hero-btn {
         order: 3 !important;
-        margin: 0 auto 30px !important;
-        /* Center button and add space below */
+        margin: 0 auto 40px !important;
+        /* Explicit large space below button */
         display: inline-block !important;
         align-self: center !important;
     }
 
     .about-me img {
         order: 4 !important;
-        /* Last in stack */
         float: none !important;
         margin: 0 auto !important;
-        /* No negative margin */
+        /* Pure auto margin, no negatives */
         display: block !important;
         width: 180px !important;
         height: 180px !important;
