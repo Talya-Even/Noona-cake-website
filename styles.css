@@ -1655,12 +1655,16 @@ section {
         float: none !important;
     }
 
+    /* FIX: Center the arrow button strictly */
     .down-arrow {
-        position: relative;
-        top: auto;
-        right: auto;
-        margin: 40px auto 0;
-        width: fit-content;
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        left: auto !important;
+        margin: 40px auto 0 !important;
+        width: fit-content !important;
+        display: block !important;
+        transform: none !important;
     }
 
     /* 5. PRODUCTS (Swiper/Grid) */
@@ -1672,13 +1676,35 @@ section {
         font-size: 28px !important;
     }
 
-    /* Ensure boxes fit screen */
+    /* FIX: Center the slider block and text */
+    .product-row {
+        justify-content: center !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
     .product .product-row .box {
         width: 100% !important;
         max-width: 100%;
-        margin-right: 0 !important;
-        margin-left: 0 !important;
-        margin-bottom: 20px;
+        margin: 0 auto 20px !important;
+        /* Center individual boxes */
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+    }
+
+    .product-content {
+        text-align: center !important;
+        width: 100% !important;
+        align-items: center !important;
+    }
+
+    .product-content h3,
+    .product-content p {
+        text-align: center !important;
+        width: 100%;
     }
 
     /* 6. GALLERY - Vertical Grid */
@@ -1692,17 +1718,20 @@ section {
         margin-top: 30px;
     }
 
+    /* FIX: Add gap between images using margins */
     .gallery .row {
-        gap: 15px;
-        justify-content: center;
+        gap: 0 !important;
+        justify-content: center !important;
     }
 
     .gallert-col {
-        /* Force 2 columns */
-        flex: 0 0 calc(50% - 10px) !important;
-        max-width: calc(50% - 10px) !important;
+        /* Force 2 columns with visible spacing */
+        flex: 0 0 46% !important;
+        max-width: 46% !important;
         height: 200px !important;
-        margin-bottom: 10px;
+        margin: 2% !important;
+        /* Adds the requested gap */
+        width: auto !important;
     }
 
     .gallert-col img {
@@ -1763,48 +1792,53 @@ section {
         width: 95% !important;
         margin: 120px auto 50px !important;
         padding: 140px 20px 40px !important;
-        text-align: center !important;
+        text-align: right !important;
+        /* FIX: Align to right */
         height: auto !important;
         background-attachment: scroll;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end !important;
+        /* FIX: Align items (text) to right */
     }
 
     .about-me img {
         float: none !important;
-        margin: -230px auto 20px !important;
-        /* Adjusted to pull image up correctly relative to padding */
-        /* Actually, wait, margin is relative to flow. If flex column, margin-top negative pulls it up. */
-        /* If I want it 100px above border. */
-        margin-top: -210px !important;
-        /* 180px/2 = 90. + extra. */
-        /* Let's be simple: margin-top: -90px. */
-        margin: -90px auto 30px !important;
+        /* FIX: Move image slightly downward (less negative margin) and push text away (more bottom margin) */
+        margin: -50px auto 60px !important;
         display: block !important;
         width: 180px !important;
         height: 180px !important;
+        align-self: center !important;
+        /* Keep image centered horizontally */
     }
 
     .about-me h1 {
         position: static !important;
-        text-align: center !important;
+        text-align: right !important;
+        /* FIX: Align to right */
         margin-bottom: 20px !important;
         font-size: 36px !important;
+        width: 100%;
+        direction: rtl;
     }
 
     .about-me p {
-        margin: 0 auto 30px !important;
+        margin: 0 0 30px !important;
         font-size: 16px !important;
         padding: 0 !important;
-        text-align: center !important;
+        text-align: right !important;
+        /* FIX: Align to right */
         direction: rtl;
         line-height: 1.6;
+        width: 100%;
     }
 
     .hero-btn {
         margin: 0 auto !important;
         display: inline-block !important;
+        align-self: center !important;
+        /* Center the button */
     }
 
     /* 9. FACEBOOK BANNER */
