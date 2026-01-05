@@ -1840,10 +1840,13 @@ section {
 
     .about-me h1 {
         order: 1 !important;
-        text-align: right !important;
+        text-align: center !important;
+        /* FIX: Center horizontally */
         margin-bottom: 20px !important;
-        font-size: 36px !important;
+        font-size: 40px !important;
+        /* FIX: Increased font size */
         width: 100% !important;
+        display: block !important;
     }
 
     .about-me p {
@@ -1858,8 +1861,7 @@ section {
 
     .hero-btn {
         order: 3 !important;
-        margin: 0 auto 40px !important;
-        /* Explicit large space below button */
+        margin: 0 auto 20px !important;
         display: inline-block !important;
         align-self: center !important;
     }
@@ -1867,8 +1869,8 @@ section {
     .about-me img {
         order: 4 !important;
         float: none !important;
-        margin: 0 auto !important;
-        /* Pure auto margin, no negatives */
+        margin: 10px auto 0 !important;
+        /* FIX: Move down by 10px */
         display: block !important;
         width: 180px !important;
         height: 180px !important;
