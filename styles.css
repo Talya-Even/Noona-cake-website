@@ -1,20 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-   
-      font-family: "Jost", sans-serif;
-      font-optical-sizing: auto;
-      font-style: normal;
-    
+
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
     list-style: none;
     text-decoration: none;
-    
+
 }
 
 header {
-    position:inherit;
+    position: inherit;
     width: 100%;
     height: 120px;
     top: 0;
@@ -22,21 +22,21 @@ header {
     z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 20px 10%;
     flex-direction: row;
 }
 
-a.logo img{
+a.logo img {
     max-width: 110px;
     height: auto;
 }
 
-.navmanue{
+.navmanue {
     display: flex;
 }
 
-.navmanue a{
+.navmanue a {
     color: #2c2c2c;
     font-size: 17px;
     text-transform: capitalize;
@@ -45,16 +45,16 @@ a.logo img{
     transition: all .45s ease;
 }
 
-.navmanue a:hover{
+.navmanue a:hover {
     color: #e01f70;
 }
 
-.nav-icon{
+.nav-icon {
     display: flex;
     align-items: center;
 }
 
-.nav-icon i{
+.nav-icon i {
     margin-right: 18px;
     color: #2c2c2c;
     font-size: 20px;
@@ -62,24 +62,25 @@ a.logo img{
     transition: all .42s ease;
 }
 
-.nav-icon i:hover{
+.nav-icon i:hover {
     transform: scale(1.1);
-    color:  #e01f70;
+    color: #e01f70;
 }
 
-#menu-icon{
+#menu-icon {
     font-size: 25px;
     color: #2c2c2c;
     z-index: 10001;
     cursor: pointer;
 }
 
-#whatsappButton{
+#whatsappButton {
     margin-left: -15px;
 }
+
 /*/////////////////////////////////////////////////////////////////////////////*/
-    
-.maim-t{
+
+.maim-t {
     padding: 5% 10%;
 }
 
@@ -103,30 +104,32 @@ a.logo img{
     width: 100%;
     height: 100%;
     background: url('./images/CED12826-BD8B-4CD0-8A91-1B5831B683E3.JPG') no-repeat center center/cover;
-    transform: rotate(180deg); /* סיבוב התמונה ב-90 מעלות */
-    z-index: -1; /* הצגת הרקע מתחת לתוכן */
+    transform: rotate(180deg);
+    /* סיבוב התמונה ב-90 מעלות */
+    z-index: -1;
+    /* הצגת הרקע מתחת לתוכן */
 }
 
 
-.main-text h3{
-    color:#2c2c2c;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+.main-text h3 {
+    color: #2c2c2c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 35px;
     text-transform: capitalize;
-    font-weight:100;
+    font-weight: 100;
     margin-top: 20px;
 }
 
-.maim-t h1{
+.maim-t h1 {
     color: black;
-    font-size:50px;
+    font-size: 50px;
     text-transform: capitalize;
     line-height: 1.1;
     font-weight: 600px;
     margin: 10px 0 15px;
 }
 
-.maim-t p{
+.maim-t p {
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -134,28 +137,40 @@ a.logo img{
 }
 
 .order-btn {
-    display: inline-block; /* הופך את הכפתור לאלמנט כמו כפתור */
-    padding: 10px 20px; /* ריווח פנימי לכפתור */
+    display: inline-block;
+    /* הופך את הכפתור לאלמנט כמו כפתור */
+    padding: 10px 20px;
+    /* ריווח פנימי לכפתור */
     margin-top: 20px;
-    color: #fff; /* צבע טקסט לבן */
-    background-color: #000; /* צבע רקע שחור */
-    border: none; /* מסיר את המסגרת */
-    border-radius: 5px; /* פינות מעוגלות */ 
-    font-size: 16px; /* גודל טקסט */
-    text-align: center; /* מרכז את הטקסט */
-    text-decoration: none; /* מסיר קו תחתון */
-    transition: background-color 0.3s; /* אפקט מעבר צבע */
+    color: #fff;
+    /* צבע טקסט לבן */
+    background-color: #000;
+    /* צבע רקע שחור */
+    border: none;
+    /* מסיר את המסגרת */
+    border-radius: 5px;
+    /* פינות מעוגלות */
+    font-size: 16px;
+    /* גודל טקסט */
+    text-align: center;
+    /* מרכז את הטקסט */
+    text-decoration: none;
+    /* מסיר קו תחתון */
+    transition: background-color 0.3s;
+    /* אפקט מעבר צבע */
 }
 
 .order-btn:hover {
-    background-color: #ccc; /* שינוי צבע רקע כאשר העכבר מעל */
+    background-color: #ccc;
+    /* שינוי צבע רקע כאשר העכבר מעל */
 }
 
 .instagram-logo-main {
     display: block;
     margin-top: 20px;
     margin-left: 0;
-    color: #000; /* צבע שחור */
+    color: #000;
+    /* צבע שחור */
     text-decoration: none;
     transition: all 0.3s ease;
     text-align: left;
@@ -165,22 +180,24 @@ a.logo img{
 }
 
 .instagram-logo-main i {
-    font-size: 40px; /* גדול יותר מהאייקון בתחתית */
+    font-size: 40px;
+    /* גדול יותר מהאייקון בתחתית */
     color: #000;
     transition: transform 0.3s ease;
 }
 
 .instagram-logo-main:hover i {
-    transform: scale(1.05); /* גדילה קלה מאוד */
+    transform: scale(1.05);
+    /* גדילה קלה מאוד */
 }
 
-.down-arrow{
+.down-arrow {
     position: absolute;
     top: 85%;
     right: 11%;
 }
 
-.down i{
+.down i {
     font-size: 25px;
     color: #2c2c2c;
     border: 2px solid #2c2c2c;
@@ -188,35 +205,44 @@ a.logo img{
     padding: 12px 12px;
 }
 
-.down i:hover{
+.down i:hover {
     background-color: #2c2c2c;
     color: #fff;
     transition: all .50s ease;
 }
 
 button {
-    border: none; /* Remove borders */
+    border: none;
+    /* Remove borders */
     background: none;
-    color: white; /* Set text color */
-    padding: 10px 20px; /* Set padding */
-    font-size: 16px; /* Set font size */
-    cursor: pointer; /* Set cursor */
-    transition: background-color 0.3s; /* Add transition for background color */
+    color: white;
+    /* Set text color */
+    padding: 10px 20px;
+    /* Set padding */
+    font-size: 16px;
+    /* Set font size */
+    cursor: pointer;
+    /* Set cursor */
+    transition: background-color 0.3s;
+    /* Add transition for background color */
 }
 
 #scrollToTopBtn {
     position: fixed;
     bottom: 20px;
     left: 20px;
-    width: 50px; /* גודל הכפתור */
-    height: 50px; /* גובה הכפתור שווה לרוחב */
+    width: 50px;
+    /* גודל הכפתור */
+    height: 50px;
+    /* גובה הכפתור שווה לרוחב */
     background-color: #e01f70;
     color: white;
     border: none;
     border-radius: 90px;
     padding: 15px;
     cursor: pointer;
-    display: none; /* מוסתר בהתחלה */
+    display: none;
+    /* מוסתר בהתחלה */
 }
 
 #scrollToTopBtn:hover {
@@ -237,7 +263,7 @@ button:hover {
         height: auto;
         min-height: 80px;
     }
-    
+
     .navmanue {
         position: fixed;
         top: 80px;
@@ -252,27 +278,27 @@ button:hover {
         box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
         z-index: 10000;
     }
-    
+
     .navmanue.active {
         right: 0;
     }
-    
+
     .navmanue li {
         width: 100%;
         margin: 0;
     }
-    
+
     .navmanue a {
         display: block;
         padding: 15px 30px;
         width: 100%;
     }
-    
+
     #menu-icon {
         display: block;
         cursor: pointer;
     }
-    
+
     #menu-icon.bx-x {
         font-size: 28px;
     }
@@ -287,37 +313,38 @@ button:hover {
 
 /* Mobile - Small screens */
 @media (max-width: 768px) {
+
     /* Remove side padding globally */
     body {
         overflow-x: hidden;
     }
-    
+
     /* Header adjustments */
     header {
         padding: 10px 3%;
         height: auto;
         min-height: 70px;
     }
-    
+
     a.logo img {
         max-width: 80px;
     }
-    
+
     .nav-icon {
         gap: 10px;
     }
-    
+
     .nav-icon i {
         margin-right: 10px;
         font-size: 18px;
     }
-    
+
     .navmanue {
         top: 70px;
         width: 100%;
         right: -100%;
     }
-    
+
     /* Hero section */
     .maim-t {
         height: 100vh;
@@ -327,12 +354,12 @@ button:hover {
         justify-content: center;
         text-align: center;
     }
-    
+
     .maim-t::before {
         background-size: cover;
         background-position: center;
     }
-    
+
     .main-text {
         text-align: center;
         width: 100%;
@@ -340,25 +367,25 @@ button:hover {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .main-text h3 {
         font-size: 24px;
     }
-    
+
     .maim-t h1 {
         font-size: 32px;
         line-height: 1.2;
     }
-    
+
     .maim-t p {
         font-size: 16px;
     }
-    
+
     .order-btn {
         padding: 12px 24px;
         font-size: 14px;
     }
-    
+
     .instagram-logo-main {
         margin-left: auto !important;
         margin-right: auto !important;
@@ -366,17 +393,17 @@ button:hover {
         display: block !important;
         width: fit-content;
     }
-    
+
     .instagram-logo-main i {
         font-size: 32px;
     }
-    
+
     .down-arrow {
         top: 80%;
         right: 50%;
         transform: translateX(50%);
     }
-    
+
     /* Products section */
     .product {
         padding: 2rem 3% 3rem;
@@ -385,27 +412,27 @@ button:hover {
         background-color: rgba(204, 194, 200, 0.23);
         border-radius: 1rem;
     }
-    
+
     .center-text {
         margin-top: 30px;
     }
-    
+
     .center-text h1 {
         font-size: 24px;
     }
-    
+
     .product .product-row {
         padding-bottom: 2rem;
     }
-    
+
     .product .swiper {
         padding-bottom: 2rem;
     }
-    
+
     .product .swiper-pagination {
         bottom: 0 !important;
     }
-    
+
     .product .product-row .box {
         width: 100%;
         max-width: 280px;
@@ -418,21 +445,21 @@ button:hover {
         justify-content: flex-start;
         gap: 15px;
     }
-    
+
     .product .product-row .img {
         flex-shrink: 0;
     }
-    
+
     .cookies-img {
         width: 150px;
         height: 150px;
     }
-    
+
     .product-row {
         margin-top: 30px;
         padding: 0;
     }
-    
+
     .product .product-row .product-content {
         margin-top: 0;
         flex: 1;
@@ -442,7 +469,7 @@ button:hover {
         min-height: 80px;
         overflow: visible;
     }
-    
+
     .product .product-row .product-content h3 {
         font-size: 20px;
         margin-bottom: 8px;
@@ -450,7 +477,7 @@ button:hover {
         word-wrap: break-word;
         overflow-wrap: break-word;
     }
-    
+
     .product .product-row .product-content p {
         font-size: 16px;
         line-height: 1.6;
@@ -458,14 +485,14 @@ button:hover {
         word-wrap: break-word;
         overflow-wrap: break-word;
     }
-    
+
     /* Gallery section */
     .gallery {
         width: 100%;
         padding: 30px 3% 0;
         margin: 0;
     }
-    
+
     .gallery h1 {
         font-size: 16px;
         margin-top: 20px;
@@ -475,12 +502,12 @@ button:hover {
         text-overflow: clip;
         word-wrap: break-word;
     }
-    
+
     .gallery p {
         font-size: 16px;
         margin-bottom: 30px;
     }
-    
+
     .gallery .row {
         gap: 0 !important;
         padding: 0 !important;
@@ -489,7 +516,7 @@ button:hover {
         flex-wrap: wrap !important;
         justify-content: flex-start !important;
     }
-    
+
     .gallery .gallert-col {
         flex: 0 0 50% !important;
         max-width: 50% !important;
@@ -499,40 +526,40 @@ button:hover {
         box-sizing: border-box !important;
         margin: 0 !important;
     }
-    
+
     .gallery .gallert-col:nth-child(odd) {
         padding-right: 2px;
     }
-    
+
     .gallery .gallert-col:nth-child(even) {
         padding-left: 2px;
     }
-    
+
     .gallery .gallert-col img {
         height: 150px !important;
         width: 100% !important;
         object-fit: cover !important;
     }
-    
+
     .layer h3 {
         font-size: 16px;
     }
-    
+
     /* Why choose us section */
     .reasons {
         padding: 0 3%;
         width: 100%;
     }
-    
+
     .center-text1 {
         padding-top: 60px;
         margin-bottom: 40px;
     }
-    
+
     .center-text1 h1 {
         font-size: 28px;
     }
-    
+
     .img-container {
         position: relative;
         display: flex;
@@ -546,7 +573,7 @@ button:hover {
         max-width: 100%;
         box-sizing: border-box;
     }
-    
+
     .STRAWBERY-img {
         width: 100px;
         height: auto;
@@ -555,7 +582,7 @@ button:hover {
         position: relative;
         order: 2;
     }
-    
+
     .left-icons {
         position: static;
         display: flex;
@@ -568,7 +595,7 @@ button:hover {
         order: 1;
         margin-bottom: 15px;
     }
-    
+
     .right-icons {
         position: static;
         display: flex;
@@ -581,7 +608,7 @@ button:hover {
         order: 3;
         margin-top: 15px;
     }
-    
+
     .icon-text-pair {
         display: flex;
         align-items: center;
@@ -589,17 +616,17 @@ button:hover {
         margin-bottom: 0;
         width: 100%;
     }
-    
+
     .icon-text-pair.short {
         align-self: center;
     }
-    
+
     .icon-text-pair i {
         font-size: 18px;
         margin: 0 10px;
         flex-shrink: 0;
     }
-    
+
     .icon-text-pair p {
         font-size: 13px;
         margin: 0;
@@ -610,23 +637,23 @@ button:hover {
         overflow-wrap: break-word;
         text-align: center;
     }
-    
+
     .left-icons .icon-text-pair {
         flex-direction: row;
     }
-    
+
     .left-icons .icon-text-pair p {
         text-align: center;
     }
-    
+
     .right-icons .icon-text-pair {
         flex-direction: row;
     }
-    
+
     .right-icons .icon-text-pair p {
         text-align: center;
     }
-    
+
     /* About me section */
     .about-me {
         width: 100%;
@@ -639,7 +666,7 @@ button:hover {
         align-items: center;
         position: relative;
     }
-    
+
     .about-me h1 {
         order: 1;
         position: static;
@@ -650,7 +677,7 @@ button:hover {
         transform: none;
         z-index: 3;
     }
-    
+
     .about-me p {
         order: 2;
         font-size: 16px;
@@ -661,7 +688,7 @@ button:hover {
         z-index: 1;
         direction: rtl;
     }
-    
+
     .hero-btn {
         order: 3;
         font-size: 18px;
@@ -671,7 +698,7 @@ button:hover {
         width: fit-content;
         text-align: center;
     }
-    
+
     .about-me img {
         order: 4;
         width: 180px;
@@ -682,7 +709,7 @@ button:hover {
         position: static;
         z-index: 2;
     }
-    
+
     /* Facebook banner */
     .facebook-banner {
         width: 100%;
@@ -690,38 +717,38 @@ button:hover {
         padding: 20px 3%;
         box-sizing: border-box;
     }
-    
+
     .banner-content h1 {
         font-size: 22px;
     }
-    
+
     .banner-text {
         font-size: 14px;
     }
-    
+
     .banner-link a {
         font-size: 14px;
         padding: 8px 16px;
     }
-    
+
     /* Footer */
     .footer {
         padding: 30px 3%;
         width: 100%;
         box-sizing: border-box;
     }
-    
+
     .footer p {
         font-size: 14px;
         padding: 0;
         margin: 0 auto;
         max-width: 100%;
     }
-    
+
     .icons .fa {
         font-size: 24px;
     }
-    
+
     /* Scroll to top button */
     #scrollToTopBtn {
         width: 45px;
@@ -738,133 +765,133 @@ button:hover {
     .maim-t {
         padding: 15% 2% 10%;
     }
-    
+
     .maim-t h1 {
         font-size: 26px;
     }
-    
+
     .main-text h3 {
         font-size: 20px;
     }
-    
+
     .gallery {
         padding: 30px 2% 0;
     }
-    
+
     .gallery h1 {
         font-size: 14px;
     }
-    
+
     .gallery .row {
         gap: 0 !important;
     }
-    
+
     .gallery .gallert-col {
         flex: 0 0 50% !important;
         max-width: 50% !important;
         width: 50% !important;
         height: 140px !important;
     }
-    
+
     .gallery .gallert-col:nth-child(odd) {
         padding-right: 2px;
     }
-    
+
     .gallery .gallert-col:nth-child(even) {
         padding-left: 2px;
     }
-    
+
     .gallery .gallert-col img {
         height: 140px !important;
     }
-    
+
     .center-text1 h1 {
         font-size: 24px;
     }
-    
+
     .STRAWBERY-img {
         width: 90px;
     }
-    
+
     .icon-text-pair p {
         font-size: 12px;
     }
-    
+
     .about-me {
         padding: 50px 2% 40px;
     }
-    
+
     .about-me h1 {
         font-size: 28px;
         margin-bottom: 25px;
     }
-    
+
     .about-me img {
         width: 150px;
         height: 150px;
         margin: 0 auto;
     }
-    
+
     .about-me p {
         font-size: 15px;
         margin-bottom: 20px;
         padding: 0 3%;
     }
-    
+
     .hero-btn {
         margin: 0 auto 25px;
         display: block;
     }
-    
+
     .gallery .gallert-col {
         flex: 0 0 calc(50% - 3px) !important;
         max-width: calc(50% - 3px) !important;
         width: calc(50% - 3px) !important;
         height: 140px !important;
     }
-    
+
     .gallery .gallert-col img {
         height: 140px !important;
     }
-    
+
     .gallery h1 {
         font-size: 16px;
     }
-    
+
     .product {
         padding: 2rem 2%;
     }
-    
+
     .product .product-row .box {
         max-width: 100%;
         padding: 1.2rem 1rem;
         min-height: 330px;
     }
-    
+
     .product .product-row .product-content h3 {
         font-size: 18px;
     }
-    
+
     .product .product-row .product-content p {
         font-size: 13px;
     }
-    
+
     .reasons {
         padding: 0 2%;
     }
-    
+
     .facebook-banner {
         padding: 20px 2%;
     }
-    
+
     .banner-content h1 {
         font-size: 20px;
     }
-    
+
     .banner-text {
         font-size: 13px;
     }
-    
+
     .footer {
         padding: 30px 2%;
     }
@@ -872,16 +899,18 @@ button:hover {
 
 /* Touch device improvements */
 @media (hover: none) and (pointer: coarse) {
+
     .navmanue a,
     .order-btn,
     .hero-btn,
     .banner-link a {
-        min-height: 44px; /* Minimum touch target size */
+        min-height: 44px;
+        /* Minimum touch target size */
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
+
     .nav-icon i,
     #menu-icon {
         min-width: 44px;
@@ -897,11 +926,11 @@ button:hover {
 
 
 
-.product{
+.product {
     padding: 2rem 7%;
 }
 
-.center-text{
+.center-text {
     font-family: "Jost", sans-serif;
     text-align: center;
     font-size: 20px;
@@ -909,40 +938,45 @@ button:hover {
     margin-top: 50px;
 }
 
-.product-row{
-    display: flex; /* מסדר את התיבות זו לצד זו */
-    flex-wrap: wrap; /* אם אין מקום, ישבור לשורה חדשה */
-    gap: 20px; /* רווח בין התיבות */
-    justify-content: center; /* ממרכז את התיבות */
+.product-row {
+    display: flex;
+    /* מסדר את התיבות זו לצד זו */
+    flex-wrap: wrap;
+    /* אם אין מקום, ישבור לשורה חדשה */
+    gap: 20px;
+    /* רווח בין התיבות */
+    justify-content: center;
+    /* ממרכז את התיבות */
     margin-top: 50px;
 }
 
-.cookies-img{
+.cookies-img {
     width: 180px;
     height: 180px;
     border-radius: 80%;
-    object-fit: cover; 
-    border: 5px solid #fff; /* הוספת מסגרת לבנה עם רוחב 5px */
-    object-fit: cover; 
+    object-fit: cover;
+    border: 5px solid #fff;
+    /* הוספת מסגרת לבנה עם רוחב 5px */
+    object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.cookies-img:hover{
+.cookies-img:hover {
     transform: scale(1.2);
 }
 
-.content{
+.content {
     margin-top: 10px;
 }
 
-.product .row{
+.product .row {
     margin-bottom: 4rem;
     display: flex;
     align-items: center;
 
 }
 
-.product .product-row .box{
+.product .product-row .box {
     display: flex;
     flex-direction: column;
     width: 15rem;
@@ -961,12 +995,12 @@ button:hover {
     height: auto;
 }
 
-.product .product-row .content{
+.product .product-row .content {
     margin-bottom: 4rem;
 }
 
-.product .product-row .product-content h3{
-    font-family:  "Fredoka", sans-serif;
+.product .product-row .product-content h3 {
+    font-family: "Fredoka", sans-serif;
     font-weight: 500;
     font-size: 24px;
     color: var(--black);
@@ -975,8 +1009,8 @@ button:hover {
     overflow-wrap: break-word;
 }
 
-.product .product-row .product-content p{
-    font-family:  "Fredoka", sans-serif;
+.product .product-row .product-content p {
+    font-family: "Fredoka", sans-serif;
     font-size: 1rem;
     line-height: 1.5;
     color: var(--black);
@@ -984,81 +1018,94 @@ button:hover {
     overflow-wrap: break-word;
 }
 
-.blogs{
+.blogs {
     background-color: rgba(204, 194, 200, 0.23);
     background-size: cover;
     background-position: center center;
 
-     width: 90%;/* לדוגמה: מגדיר רוחב של 80% מההורה */
-    margin: 0 auto; /* מרכז את הקופסה */
-    padding: 20px; /* מרווח פנימי */
-    border: 1px solid #ccc; /* אם רוצים להוסיף גבול */
-    border-radius: 10px; /* פינות מעוגלות */
+    width: 90%;
+    /* לדוגמה: מגדיר רוחב של 80% מההורה */
+    margin: 0 auto;
+    /* מרכז את הקופסה */
+    padding: 20px;
+    /* מרווח פנימי */
+    border: 1px solid #ccc;
+    /* אם רוצים להוסיף גבול */
+    border-radius: 10px;
+    /* פינות מעוגלות */
 
 }
+
 .blogs .blogs-row .box {
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: var(--white);
     flex-wrap: wrap;
-    
+
 }
-.blogs .blogs-row .box .img{
+
+.blogs .blogs-row .box .img {
     flex: 1 1 45;
 }
-.blogs .blogs-row .box .img img{
+
+.blogs .blogs-row .box .img img {
     width: 360px;
     height: 360px;
     border-radius: 80%;
     padding: 5rem;
-    max-width: 100%; /* מגביל את רוחב התמונה */
+    max-width: 100%;
+    /* מגביל את רוחב התמונה */
 }
 
-.blogs .blogs-row .box .content{
+.blogs .blogs-row .box .content {
     flex: 1 1 45rem;
     padding: 2rem;
 }
-.blogs .blogs-row .box .content h3{
+
+.blogs .blogs-row .box .content h3 {
     font-size: 30px;
     color: var(--black);
     text-align: right;
     text-shadow: var(--box-shadow);
 
 }
-.blogs .blogs-row .box .content p{
+
+.blogs .blogs-row .box .content p {
     font-size: 1rem;
     color: var(--black);
     padding: 1rem 0;
     line-height: 1.4;
     text-align: right;
 }
-.blogs .blogs-row .box .content a{
+
+.blogs .blogs-row .box .content a {
     color: var(--black);
     font-size: 1rem;
     text-align: right;
     cursor: pointer;
 }
-.blogs .blogs-row .box .content a:hover{
+
+.blogs .blogs-row .box .content a:hover {
     color: var(--black);
     text-shadow: var(--box-shadow);
 }
 
 /*  A changing gallery section start ------------------------------------------------------------------------------------------- */
-.gallery{
+.gallery {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
 }
 
-.gallery h1{
+.gallery h1 {
     margin-top: 40px;
     font-size: 40px;
     font-family: "Jost", sans-serif;
 }
 
-.gallery p{
+.gallery p {
     margin-top: 13px;
     margin-bottom: 40px;
     font-family: "Fredoka", sans-serif;
@@ -1067,13 +1114,17 @@ button:hover {
 .row {
     display: flex;
     justify-content: center;
-    gap: 15px; /* רווחים בין התמונות */
-    flex-wrap: wrap; /* כדי שהתמונות יעברו לשורה הבאה אם אין מקום */
+    gap: 15px;
+    /* רווחים בין התמונות */
+    flex-wrap: wrap;
+    /* כדי שהתמונות יעברו לשורה הבאה אם אין מקום */
 }
 
-.gallert-col{
-    flex: 0 0 calc(25% - 12px); /* 4 תמונות בשורה עם gap */
-    max-width: calc(25% - 12px); /* מגביל את הרוחב המקסימלי של כל תמונה */
+.gallert-col {
+    flex: 0 0 calc(25% - 12px);
+    /* 4 תמונות בשורה עם gap */
+    max-width: calc(25% - 12px);
+    /* מגביל את הרוחב המקסימלי של כל תמונה */
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -1081,36 +1132,42 @@ button:hover {
     overflow: hidden;
     height: 325px;
     min-width: 200px;
-    
+
 }
 
-.gallert-col img{
+.gallert-col img {
     display: block;
-    object-fit: cover; /* מבטיח שהתמונה לא תיחתך */
+    object-fit: cover;
+    /* מבטיח שהתמונה לא תיחתך */
     height: 325px;
     width: 100%;
     position: relative;
-    z-index: 0; /* כדי לוודא שהתמונה מתחת ל-layer */
-    object-fit: cover; /* שומר על יחס רוחב-גובה מבלי לחתוך */
-    border-radius: 10px; /* עיגול הפינות לתמונה עצמה */
+    z-index: 0;
+    /* כדי לוודא שהתמונה מתחת ל-layer */
+    object-fit: cover;
+    /* שומר על יחס רוחב-גובה מבלי לחתוך */
+    border-radius: 10px;
+    /* עיגול הפינות לתמונה עצמה */
 }
 
-.layer{
+.layer {
     background: transparent;
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1; /* לוודא שהשכבה נמצאת מעל התמונה */
+    z-index: 1;
+    /* לוודא שהשכבה נמצאת מעל התמונה */
     transition: 0.5s;
 
 }
-.layer:hover{
+
+.layer:hover {
     background: rgba(220, 20, 60, 0.7);
 }
 
-.layer h3{
+.layer h3 {
     width: 100%;
     font-weight: 500;
     color: #fff;
@@ -1123,10 +1180,12 @@ button:hover {
     opacity: 0;
     transition: 0.5s;
 }
-.layer:hover h3{
+
+.layer:hover h3 {
     bottom: 49%;
     opacity: 1;
 }
+
 /* A changing gallery section end ----------------------------------------------------------------------------------------------------  */
 
 /*  why choose us section start here */
@@ -1134,19 +1193,23 @@ section {
     text-align: center;
 }
 
-.center-text1{
+.center-text1 {
     margin-bottom: 60px;
     padding-top: 130px;
 }
- 
+
 .img-container {
-    position: relative; /* מאפשר לאייקונים להיות ממוקמים יחסית לתמונה */
+    position: relative;
+    /* מאפשר לאייקונים להיות ממוקמים יחסית לתמונה */
     display: flex;
     justify-content: center;
-    align-items: flex-start;;
+    align-items: flex-start;
+    ;
     width: 100%;
-    margin-left: -40px; /* או מספר אחר לפי הצורך */
-    margin-right: auto; /* שומר על הצד הימני לא מגודר */
+    margin-left: -40px;
+    /* או מספר אחר לפי הצורך */
+    margin-right: auto;
+    /* שומר על הצד הימני לא מגודר */
     margin-bottom: 60px;
     text-align: center;
 }
@@ -1154,60 +1217,78 @@ section {
 .STRAWBERY-img {
     width: 200px;
     height: auto;
-    z-index: 1; /* מוודא שהתמונה מופיעה מעל האייקונים */
-    margin: 0 40px; /* Add some margin to the left and right */
+    z-index: 1;
+    /* מוודא שהתמונה מופיעה מעל האייקונים */
+    margin: 0 40px;
+    /* Add some margin to the left and right */
 }
 
 
 .left-icons {
-    left: 400px; /* התאמת המרחק מהתמונה */
-    margin-right: 35px; /* Add space between the left icons and the image */
-    margin-top: 20px; /* ערך מותאם לפי הצורך */
-    gap: 90px; /*התאמה מרווח בעמודה עצמה*/
+    left: 400px;
+    /* התאמת המרחק מהתמונה */
+    margin-right: 35px;
+    /* Add space between the left icons and the image */
+    margin-top: 20px;
+    /* ערך מותאם לפי הצורך */
+    gap: 90px;
+    /*התאמה מרווח בעמודה עצמה*/
 }
 
 .right-icons {
-    right:400px; /* התאמת המרחק מהתמונה */
-    margin-left: 35px; /* Add space between the right icons and the image */
-    margin-top: 20px; /* ערך מותאם לפי הצורך */
+    right: 400px;
+    /* התאמת המרחק מהתמונה */
+    margin-left: 35px;
+    /* Add space between the right icons and the image */
+    margin-top: 20px;
+    /* ערך מותאם לפי הצורך */
     gap: 90px;
 }
 
 .icon-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start; /* Ensure icons start from the top */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Ensure icons start from the top */
 }
 
 
 /* Icon-text pair styling */
 .icon-text-pair {
     display: flex;
-    align-items:center; /* Align icon and text vertically */
-    margin-bottom: 20px; /* Space between each icon-text pair */
+    align-items: center;
+    /* Align icon and text vertically */
+    margin-bottom: 20px;
+    /* Space between each icon-text pair */
 }
 
 /* Styles for icons */
 .icon-text-pair i {
     font-size: 24px;
-    margin-right: 25px; /* Space between icon and text */
+    margin-right: 25px;
+    /* Space between icon and text */
     margin-left: 25px;
-    color: #000000; /* Icon color */
+    color: #000000;
+    /* Icon color */
 }
 
 .icon-text-pair.short {
-    align-self: flex-end; /* או flex-end, תלוי לאן אתה רוצה להזיז את האייקון */
+    align-self: flex-end;
+    /* או flex-end, תלוי לאן אתה רוצה להזיז את האייקון */
 }
 
 .icon-text-pair p {
-    font-family:  "Fredoka", sans-serif; /* שנה את 'YOUR_FONT_NAME' לשם הגופן שלך */
+    font-family: "Fredoka", sans-serif;
+    /* שנה את 'YOUR_FONT_NAME' לשם הגופן שלך */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .img-container {
-        flex-direction: column; /* Stack vertically on smaller screens */
-        align-items: center; /* Center items */
+        flex-direction: column;
+        /* Stack vertically on smaller screens */
+        align-items: center;
+        /* Center items */
     }
 }
 
@@ -1217,11 +1298,11 @@ section {
 
 
 /*<!--about me section start-------------->*/
-.about-me{
+.about-me {
     margin: 100px auto;
     width: 88%;
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), 
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
         url(images/abstract-watercolor-illustration-paint-background_724205-548.jpg);
     background-position: center;
     background-size: cover;
@@ -1229,31 +1310,38 @@ section {
     padding: 130px 0 60px 0;
     text-align: right;
     margin-top: 130px;
-    position: relative; /* קונטיינר עם מיקום יחסי */
+    position: relative;
+    /* קונטיינר עם מיקום יחסי */
 }
 
-.about-me img{
-    width: 270px; /* רוחב וגובה שווים הופכים את התמונה לריבוע */
+.about-me img {
+    width: 270px;
+    /* רוחב וגובה שווים הופכים את התמונה לריבוע */
     height: 270px;
-    border-radius: 50%; /* עיגול מלא */
-    object-fit: cover; /* מבטיח שהתמונה מתאימה למיכל */
+    border-radius: 50%;
+    /* עיגול מלא */
+    object-fit: cover;
+    /* מבטיח שהתמונה מתאימה למיכל */
     float: left;
-    margin-top: -80px; /* הערך השלילי מרים את התמונה */
+    margin-top: -80px;
+    /* הערך השלילי מרים את התמונה */
     margin-left: 65px;
 }
 
-.about-me h1{
+.about-me h1 {
     text-align: center;
-    position: absolute; /* מיקום אבסולוטי בתוך הקונטיינר */
-    top: 10%; /* הזזת הטקסט כלפי מעלה */
+    position: absolute;
+    /* מיקום אבסולוטי בתוך הקונטיינר */
+    top: 10%;
+    /* הזזת הטקסט כלפי מעלה */
     right: 4%;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 70px;
     color: white;
 
 }
 
-.about-me p{
+.about-me p {
     color: white;
     font: bold;
     font-size: 19px;
@@ -1262,25 +1350,39 @@ section {
 }
 
 .hero-btn {
-    display: inline-block; /* הופך את הכפתור לאלמנט כמו כפתור */
-    padding: 12px 25px; /* ריווח פנימי כדי להגדיל את הכפתור */
+    display: inline-block;
+    /* הופך את הכפתור לאלמנט כמו כפתור */
+    padding: 12px 25px;
+    /* ריווח פנימי כדי להגדיל את הכפתור */
     margin-top: 15px;
     margin-right: 25px;
-    color: #fff; /* צבע הטקסט */
-    background-color: #e01f70; /* צבע רקע ורוד בהיר */
-    border: 2px solid #e01f70; /* מסגרת ורודה */
-    border-radius: 5px; /* פינות מעט מעוגלות */
-    font-family: Arial, sans-serif; /* הגדרת פונטים */
-    font-size: 22px; /* גודל טקסט */
-    text-align: center; /* מרכז את הטקסט */
-    text-decoration: none; /* מסיר קו תחתון */
-    transition: 0.3s; /* אפקט מעבר חלק */
+    color: #fff;
+    /* צבע הטקסט */
+    background-color: #e01f70;
+    /* צבע רקע ורוד בהיר */
+    border: 2px solid #e01f70;
+    /* מסגרת ורודה */
+    border-radius: 5px;
+    /* פינות מעט מעוגלות */
+    font-family: Arial, sans-serif;
+    /* הגדרת פונטים */
+    font-size: 22px;
+    /* גודל טקסט */
+    text-align: center;
+    /* מרכז את הטקסט */
+    text-decoration: none;
+    /* מסיר קו תחתון */
+    transition: 0.3s;
+    /* אפקט מעבר חלק */
 }
 
 .hero-btn:hover {
-    background-color: transparent; /* משנה את צבע הרקע כשעוברים על הכפתור */
-    color: #ccc; /* משנה את צבע הטקסט לוורוד */
+    background-color: transparent;
+    /* משנה את צבע הרקע כשעוברים על הכפתור */
+    color: #ccc;
+    /* משנה את צבע הטקסט לוורוד */
 }
+
 /*<!--about me section end-------------->*/
 
 /*<!--facebook banner section start-------------->*/
@@ -1359,43 +1461,44 @@ section {
         width: 95%;
         padding: 20px 20px;
     }
-    
+
     .banner-content h1 {
         font-size: 28px;
     }
-    
+
     .banner-text {
         font-size: 16px;
     }
-    
+
     .banner-link a {
         font-size: 16px;
         padding: 10px 20px;
     }
 }
+
 /*<!--facebook banner section end-------------->*/
 
 /*            footer start here              */
 
 
-.footer{
+.footer {
     width: 100%;
     text-align: center;
     padding: 30px 0;
 }
 
-.footer h4{
+.footer h4 {
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
 }
 
-.footer p{
+.footer p {
     font-family: "Fredoka", sans-serif;
 }
 
 
-.icons a{
+.icons a {
     color: #e01f70;
     margin: 0 7px;
     cursor: pointer;
@@ -1404,7 +1507,7 @@ section {
     display: inline-block;
 }
 
-.icons .fa{
+.icons .fa {
     color: #e01f70;
     margin: 0 7px;
     cursor: pointer;
@@ -1412,21 +1515,323 @@ section {
     font-size: 30px;
 }
 
-.icons a:hover .fa{
+.icons a:hover .fa {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
 
-.fa-heart-o{
+.fa-heart-o {
     color: #e01f70;
 }
+
 /*            footer end here              */
 
+/* ==========================================================================
+   MOBILE RESPONSIVE OVERRIDES - GENERATED FIXES (768px and below)
+   ========================================================================== */
 
+@media (max-width: 991px) {
+    header {
+        padding: 15px 5%;
+    }
 
+    .navmanue {
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        width: 300px;
+        height: 100vh;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 60px;
+        transition: right 0.3s ease;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 10000;
+    }
 
+    .navmanue.active {
+        right: 0;
+    }
 
+    .navmanue li {
+        width: 100%;
+        text-align: center;
+        margin: 15px 0;
+    }
 
+    .navmanue a {
+        font-size: 20px;
+        display: block;
+        width: 100%;
+    }
 
+    #menu-icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #2c2c2c;
+    }
+}
 
+@media (max-width: 768px) {
 
+    /* 1. LAYOUT & SCALING */
+    html,
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* 2. TEXT SIZE OPTIMIZATION */
+    h1 {
+        font-size: 32px !important;
+    }
+
+    h2 {
+        font-size: 28px !important;
+    }
+
+    h3 {
+        font-size: 24px !important;
+    }
+
+    p {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+    }
+
+    /* 3. HEADER & NAV */
+    header {
+        padding: 10px 5%;
+        min-height: 70px;
+    }
+
+    a.logo img {
+        max-width: 90px;
+    }
+
+    .navmanue {
+        width: 100%;
+        top: 70px;
+    }
+
+    /* 4. HERO SECTION */
+    .maim-t {
+        height: auto;
+        min-height: 100vh;
+        padding: 120px 5% 50px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main-text {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .main-text h3 {
+        font-size: 24px !important;
+        margin-top: 0;
+    }
+
+    .maim-t h1 {
+        font-size: 40px !important;
+        line-height: 1.2;
+        margin: 15px 0 20px;
+    }
+
+    .maim-t p {
+        font-size: 18px !important;
+    }
+
+    .instagram-logo-main {
+        margin: 20px auto 0 !important;
+        text-align: center !important;
+        float: none !important;
+    }
+
+    .down-arrow {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 40px auto 0;
+        width: fit-content;
+    }
+
+    /* 5. PRODUCTS (Swiper/Grid) */
+    .product {
+        padding: 50px 5%;
+    }
+
+    .center-text h1 {
+        font-size: 28px !important;
+    }
+
+    /* Ensure boxes fit screen */
+    .product .product-row .box {
+        width: 100% !important;
+        max-width: 100%;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        margin-bottom: 20px;
+    }
+
+    /* 6. GALLERY - Vertical Grid */
+    .gallery {
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    .gallery h1 {
+        font-size: 28px !important;
+        margin-top: 30px;
+    }
+
+    .gallery .row {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .gallert-col {
+        /* Force 2 columns */
+        flex: 0 0 calc(50% - 10px) !important;
+        max-width: calc(50% - 10px) !important;
+        height: 200px !important;
+        margin-bottom: 10px;
+    }
+
+    .gallert-col img {
+        height: 100% !important;
+        width: 100% !important;
+    }
+
+    /* 7. WHY CHOOSE US - Vertical Stack */
+    .reasons {
+        padding: 0 5%;
+        margin-bottom: 40px;
+    }
+
+    .center-text1 {
+        padding-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .img-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        margin: 0 auto 40px !important;
+    }
+
+    .left-icons,
+    .right-icons {
+        position: static !important;
+        width: 100% !important;
+        margin: 20px 0 !important;
+        padding: 0 !important;
+        text-align: center !important;
+        gap: 30px;
+    }
+
+    .STRAWBERY-img {
+        margin: 0 !important;
+    }
+
+    .icon-text-pair {
+        flex-direction: column !important;
+        justify-content: center !important;
+        margin-bottom: 0 !important;
+        text-align: center !important;
+    }
+
+    .icon-text-pair i {
+        margin: 0 0 10px 0 !important;
+        font-size: 28px !important;
+    }
+
+    .icon-text-pair p {
+        text-align: center !important;
+        max-width: 100% !important;
+    }
+
+    /* 8. ABOUT ME - Vertical Stack */
+    .about-me {
+        width: 95% !important;
+        margin: 120px auto 50px !important;
+        padding: 140px 20px 40px !important;
+        text-align: center !important;
+        height: auto !important;
+        background-attachment: scroll;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me img {
+        float: none !important;
+        margin: -230px auto 20px !important;
+        /* Adjusted to pull image up correctly relative to padding */
+        /* Actually, wait, margin is relative to flow. If flex column, margin-top negative pulls it up. */
+        /* If I want it 100px above border. */
+        margin-top: -210px !important;
+        /* 180px/2 = 90. + extra. */
+        /* Let's be simple: margin-top: -90px. */
+        margin: -90px auto 30px !important;
+        display: block !important;
+        width: 180px !important;
+        height: 180px !important;
+    }
+
+    .about-me h1 {
+        position: static !important;
+        text-align: center !important;
+        margin-bottom: 20px !important;
+        font-size: 36px !important;
+    }
+
+    .about-me p {
+        margin: 0 auto 30px !important;
+        font-size: 16px !important;
+        padding: 0 !important;
+        text-align: center !important;
+        direction: rtl;
+        line-height: 1.6;
+    }
+
+    .hero-btn {
+        margin: 0 auto !important;
+        display: inline-block !important;
+    }
+
+    /* 9. FACEBOOK BANNER */
+    .facebook-banner {
+        width: 95% !important;
+        margin: 50px auto !important;
+        padding: 30px 20px !important;
+    }
+
+    .banner-content h1 {
+        font-size: 24px !important;
+    }
+
+    .banner-link a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        font-size: 15px;
+        white-space: normal;
+        text-align: center;
+        height: auto;
+        padding: 12px;
+    }
+
+    /* 10. FOOTER */
+    .footer {
+        padding: 40px 5%;
+    }
+}
