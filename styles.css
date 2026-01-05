@@ -1741,24 +1741,25 @@ section {
         margin-top: 30px !important;
     }
 
+    /* FIX: Use CSS Grid for robust 2-column layout */
     .gallery .row {
-        display: flex !important;
-        flex-wrap: wrap !important;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
         gap: 15px !important;
-        /* Explicit Gap */
+        /* Horizontal and Vertical gap */
         justify-content: center !important;
         padding: 0 !important;
+        width: 100% !important;
     }
 
     .gallert-col {
-        /* Use calc to fit 2 items with gap */
-        flex: 0 0 calc(50% - 15px) !important;
-        max-width: calc(50% - 15px) !important;
-        width: calc(50% - 15px) !important;
+        width: 100% !important;
+        max-width: none !important;
         height: 200px !important;
         margin: 0 !important;
-        /* Reset margin, rely on gap */
         border-radius: 10px !important;
+        flex: none !important;
+        /* Disable flex behavior since we use grid */
     }
 
     .gallert-col img {
