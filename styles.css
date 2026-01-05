@@ -1754,11 +1754,11 @@ section {
 
     .gallert-col {
         flex: 0 0 48% !important;
-        /* 48% width allows for ~4% gap total */
         max-width: 48% !important;
         width: 48% !important;
         height: 200px !important;
-        margin-bottom: 15px !important;
+        margin-bottom: 2px !important;
+        /* FIX: Set vertical gap to exactly 2px */
         margin-left: 0 !important;
         margin-right: 0 !important;
         border-radius: 10px !important;
