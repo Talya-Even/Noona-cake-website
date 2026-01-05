@@ -1753,12 +1753,13 @@ section {
     }
 
     .gallert-col {
-        flex: 0 0 48% !important;
-        max-width: 48% !important;
-        width: 48% !important;
+        flex: 0 0 calc(50% - 4px) !important;
+        /* Two items + gaps */
+        max-width: calc(50% - 4px) !important;
+        width: 100% !important;
         height: 200px !important;
         margin: 2px 0 !important;
-        /* 2px vertical spacing (top and bottom) */
+        /* 2px top, 2px bottom = 4px vertical gap between rows, 2px from container edges */
         border-radius: 10px !important;
     }
 
