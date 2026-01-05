@@ -1666,12 +1666,14 @@ section {
     /* Center the Down Arrow Button */
     .down-arrow {
         position: static !important;
-        /* Remove absolute positioning */
-        margin: 30px auto 0 !important;
-        /* Auto margin for centering */
-        width: fit-content !important;
-        display: block !important;
+        width: 100% !important;
+        margin: 30px 0 0 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
         transform: none !important;
+        right: auto !important;
+        left: auto !important;
     }
 
     .down-arrow button {
