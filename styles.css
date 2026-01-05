@@ -1757,10 +1757,8 @@ section {
         max-width: 48% !important;
         width: 48% !important;
         height: 200px !important;
-        margin-bottom: 2px !important;
-        /* FIX: Set vertical gap to exactly 2px */
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+        margin: 2px 0 !important;
+        /* 2px vertical spacing (top and bottom) */
         border-radius: 10px !important;
     }
 
