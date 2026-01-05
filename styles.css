@@ -1684,6 +1684,8 @@ section {
     /* 5. PRODUCTS SECTION FIXES */
     .product {
         padding: 50px 5% !important;
+        background-color: #ffffff !important;
+        /* FIX: White background */
     }
 
     .center-text h1 {
