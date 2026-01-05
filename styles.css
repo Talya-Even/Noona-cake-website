@@ -1818,37 +1818,21 @@ section {
         max-width: 100% !important;
     }
 
-    /* 8. ABOUT ME FIXES - RIGHT ALIGNED */
+    /* 8. ABOUT ME FIXES - RIGHT ALIGNED & REORDERED */
     .about-me {
         width: 95% !important;
-        margin: 120px auto 50px !important;
-        padding: 140px 20px 40px !important;
-
+        margin: 60px auto 50px !important;
+        /* Adjusted margin since we aren't pulling image up */
+        padding: 40px 20px 40px !important;
         display: flex !important;
         flex-direction: column !important;
-        /* Align items to the right */
         align-items: flex-end !important;
         text-align: right !important;
         direction: rtl !important;
-        /* Ensure RTL flow */
-    }
-
-    .about-me img {
-        float: none !important;
-        /* Move image down significantly */
-        margin: -50px auto 90px !important;
-        /* Increased bottom margin */
-        display: block !important;
-        width: 180px !important;
-        height: 180px !important;
-        /* Image should be centered horizontally relative to the card, or right? 
-           User said 'text right aligned', doesn't strictly say image right aligned. 
-           Usually profile pics are centered. My previous code had align-self: center. 
-           I will keep image centered. */
-        align-self: center !important;
     }
 
     .about-me h1 {
+        order: 1 !important;
         position: static !important;
         text-align: right !important;
         margin-bottom: 20px !important;
@@ -1857,6 +1841,7 @@ section {
     }
 
     .about-me p {
+        order: 2 !important;
         margin: 0 0 30px !important;
         font-size: 16px !important;
         padding: 0 !important;
@@ -1866,11 +1851,23 @@ section {
     }
 
     .hero-btn {
-        margin: 0 auto !important;
+        order: 3 !important;
+        margin: 0 auto 30px !important;
+        /* Center button and add space below */
         display: inline-block !important;
         align-self: center !important;
-        /* Button centered looks better usually, but if text is right? 
-           Let's center the button as it's a call to action. */
+    }
+
+    .about-me img {
+        order: 4 !important;
+        /* Last in stack */
+        float: none !important;
+        margin: 0 auto !important;
+        /* No negative margin */
+        display: block !important;
+        width: 180px !important;
+        height: 180px !important;
+        align-self: center !important;
     }
 
     /* 9. FACEBOOK BANNER */
