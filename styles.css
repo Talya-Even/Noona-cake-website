@@ -1697,20 +1697,21 @@ section {
         padding-left: 0 !important;
         padding-right: 0 !important;
         width: 100% !important;
-        justify-content: center !important;
+        /* Removed justify-content: center to avoid conflict with Swiper flex behavior */
     }
 
     .product .product-row .box {
         width: 100% !important;
-        max-width: 320px !important;
-        /* Limit width slightly for better aesthetic */
-        margin: 0 auto 20px !important;
-        /* Center the box itself */
+        /* Force full width of swiper container */
+        max-width: none !important;
+        /* Remove restriction so it fills the slide area */
+        margin-top: 0 !important;
+        margin-bottom: 20px !important;
+        /* IMPORTANT: Do not override left/right margins (Swiper handles them) */
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         text-align: center !important;
-        /* Ensure text inside is centered */
     }
 
     .product-content {
